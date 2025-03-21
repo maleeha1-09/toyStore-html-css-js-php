@@ -1,0 +1,756 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+
+
+  
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #4accab;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 28px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 15px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #357ab7;
+    border-radius: 5px;
+}
+
+/* Full-Screen Sections */
+/* Full-Screen Sections */
+.full-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Changed to row to place content on the left side */
+    text-align: left;
+    padding: 20px;
+    background-image: url('images/steptodown.com794714.jpg'); /* Added background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color for contrast */
+}
+
+.welcome-text {
+    width: 50%; /* Ensure the text section takes up half the screen */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for text to be visible */
+    border-radius: 10px;
+}
+
+.welcome-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff; /* White color for heading */
+}
+
+.welcome-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #fff; /* White color for paragraph text */
+}
+
+/* Button: View Products */
+.welcome-text button {
+    padding: 15px 40px; /* Larger padding for a bolder button */
+    font-size: 20px; /* Slightly larger font */
+    background-color: #f15a29; /* Lahore Toys button background color */
+    color: white;
+    border: none;
+    border-radius: 30px; /* Rounded edges */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    font-weight: bold; /* Make text bolder */
+    text-transform: uppercase; /* Capitalize the text */
+}
+
+.welcome-text button:hover {
+    background-color: #d1431b; /* Darker shade for hover effect */
+    transform: scale(1.1); /* Slightly increase size on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.welcome-text button:focus {
+    outline: none; /* Remove focus outline */
+}
+
+/* Full-Screen Sections */
+.full-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Home Section */
+/* Home Section */
+#home {
+    background: url('images/steptodown.com794714.jpg') no-repeat center center/cover, /* Background Image */
+                linear-gradient(135deg, #ffb3ba, #ffcc99); /* Fun gradient with pastel colors */
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Products Section */
+/* Products Section */
+#products {
+    background: url('') repeat, /* Bubble GIF background */
+                url('https://www.transparenttextures.com/patterns/bubble-wrap.png') repeat, /* Optional: additional bubble texture */
+                linear-gradient(135deg, #c2f0c2, #ffff99); /* Playful gradient with soft colors */
+    padding: 40px 20px;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Review Section */
+#reviews {
+    background: url('https://www.transparenttextures.com/patterns/bubbles.png') repeat, /* Bubble GIF background */
+                url('https://www.transparenttextures.com/patterns/dark-grunge.png') repeat, /* Optional: additional texture */
+                linear-gradient(135deg, #ff7f7f, #ffdb58); /* Fun gradient with texture */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Section Heading */
+#products h2,
+#reviews h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Fun Section Style Adjustments */
+#products, #reviews {
+    border-radius: 8px; /* Rounded corners for the sections */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow to lift sections */
+}
+
+/* Buttons in Sections */
+.welcome-text button,
+.product-card button {
+    background-color: #ff3366; /* Fun, vibrant button color */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.welcome-text button:hover,
+.product-card button:hover {
+    background-color: #ff1a3d; /* Darker shade of red */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Products Section */
+
+
+/* Products Section */
+/* Products Section */
+#products {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    min-height: 120vh; /* Increased height to 120% of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+#products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows products to wrap onto a new line */
+    justify-content: space-around; /* Equal spacing between items */
+    gap: 20px; /* Space between rows and columns */
+    width: 90%;
+    max-width: 1200px; /* Keeps grid width reasonable */
+}
+
+/* Product Card */
+.product-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%; /* 30% width for three items per row */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Product Title */
+.product-card h4 {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Add to Cart Button */
+.product-card button {
+    background-color: #3b2a29;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #b97f58;
+}
+
+
+/* Cart Panel */
+/* Cart Panel */
+.cart-panel {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 350px; /* Increased width for better usability */
+    height: 100%;
+    background: #fff;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2); /* Improved shadow */
+    padding: 30px;
+    overflow-y: auto; /* Ensure the content is scrollable if it overflows */
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    border-radius: 10px 0 0 10px; /* Rounded corners */
+}
+
+.cart-panel.open {
+    right: 0;
+}
+
+.cart-panel h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cart-panel ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    max-height: 70%; /* Limit height for the items */
+    overflow-y: auto;
+}
+
+.cart-panel ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.cart-panel ul li .product-name {
+    font-weight: bold;
+}
+
+.cart-panel ul li .quantity {
+    color: #666;
+}
+
+.cart-panel p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cart-panel button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cart-panel button:hover {
+    background-color: #357ab7;
+}
+
+.cart-panel .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-panel .close-btn:hover {
+    background-color: #e60000;
+}
+
+/* Popup Modal */
+.popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #357ab7;
+}
+
+/* Login Page */
+.login-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.login-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-form .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #357ab7;
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+/* Review Section */
+/* Review Section */
+.review-section {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.review-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Keeps content within a reasonable width */
+}
+
+.review-form-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.review-form-container h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.review-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.review-form .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-form .form-group input,
+.review-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.review-form button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #357ab7;
+}
+
+.review-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    text-align: center;
+}
+
+.review-info h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.review-info p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Footer */
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    z-index: 100;
+}
+
+/* Footer Content: Sections for Logo, Links, and Contact Info */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to stack on smaller screens */
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 30%;
+    text-align: left;
+}
+
+.footer-logo h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    width: 30%;
+    text-align: left;
+}
+
+.footer-links h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #4a90e2;
+}
+
+.footer-contact {
+    width: 30%;
+    text-align: left;
+}
+
+.footer-contact h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Social Media */
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-social-media a {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.footer-social-media a:hover {
+    background-color: #357ab7;
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+.footer-social-media a:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Facebook */
+.footer-social-media .facebook {
+    background-color: #3b5998; /* Facebook Blue */
+    color: white;
+}
+
+.footer-social-media .facebook:hover {
+    background-color: #365899; /* Darker Facebook Blue */
+}
+
+/* Instagram */
+.footer-social-media .instagram {
+    background-color: #e4405f; /* Instagram Pink */
+    color: white;
+}
+
+.footer-social-media .instagram:hover {
+    background-color: #c13584; /* Darker Instagram Pink */
+}
+
+/* Twitter */
+.footer-social-media .twitter {
+    background-color: #1da1f2; /* Twitter Blue */
+    color: white;
+}
+
+.footer-social-media .twitter:hover {
+    background-color: #1991db; /* Darker Twitter Blue */
+}
+
+/* LinkedIn */
+.footer-social-media .linkedin {
+    background-color: #0077b5; /* LinkedIn Blue */
+    color: white;
+}
+
+.footer-social-media .linkedin:hover {
+    background-color: #005e8e; /* Darker LinkedIn Blue */
+}
+
+/* YouTube */
+.footer-social-media .youtube {
+    background-color: #ff0000; /* YouTube Red */
+    color: white;
+}
+
+.footer-social-media .youtube:hover {
+    background-color: #cc0000; /* Darker YouTube Red */
+}
+/* Footer Text */
+footer p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-links, .footer-contact {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Ensure the review section is responsive */
+@media (max-width: 768px) {
+    .review-content {
+        flex-direction: column;
+    }
+
+    .review-form-container,
+    .review-info {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+}
